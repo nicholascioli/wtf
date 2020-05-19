@@ -1,0 +1,15 @@
+body {
+	background-color: #333;
+	margin: 0.5em 1em;
+}
+
+canvas {
+	height: 100%;
+	width: 49%;
+}
+
+.container {
+	height: 95vh;
+	width: 100%;
+	display: inline-block;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Julia Set Generator</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Julia Set Generator (Attempt)</h1>
+	<div class="w-100 inline">
+		<span>Complex Parameters: </span>
+		<input id="cp_real" onchange="render()">
+		<input id="cp_imag" onchange="render()">
+		<input id="cp_enable" type="checkbox" onchange="render()">
+		<label for="cp_enable">Enable?</label>
+	</div>
+	<div class="w-100 inline">
+		<span>Power: </span>
+		<input id="power" value="2" onchange="render()">
+	</div>
+	<div class="w-100 inline">
+		<span>Iteration Count: </span>
+		<input id="iteration_count" type="number" value="20" onchange="render()">
+		<button onclick="render()">Render</button>
+	</div>
+	<canvas id="gl"></canvas>
+</body>
+<script type="text/javascript" src="../../dst/wtf.pack.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</html>

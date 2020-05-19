@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Model Loading</title>
+
+		<!-- Style -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="controller">
+			<button onclick="switch_to(VERTEX);">Per Vertex</button>
+			<button onclick="switch_to(FRAGMENT);">Per Fragment</button>
+
+			<div>
+				<label for="division">Value: <span id="division-value">1</span></label>
+				<input type="range" min="1" max="30" value="1" class="slider" id="division" oninput="change_divisor()">
+			</div>
+		</div>
+
+		<!-- Rendering canvas -->
+		<canvas id="gl"></canvas>
+	</body>
+	<script src="../../dst/wtf.pack.js"></script>
+	<script src="../common/MV.js"></script>
+	<script src="main.js"></script>
+</html>

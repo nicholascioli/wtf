@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>TV</title>
+
+		<!-- Style -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="controls">
+			<button onclick="toggle_state()">On / Off</button>
+			<button onclick="toggle_play()">Resume / Pause</button>
+			<button onclick="prev()">Previous</button>
+			<button onclick="next()">Next</button>
+		</div>
+
+		<!-- Rendering canvas -->
+		<canvas id="gl"></canvas>
+	</body>
+	<script src="../../dst/wtf.pack.js"></script>
+	<script src="../common/MV.js"></script>
+	<script src="main.js"></script>
+</html>
